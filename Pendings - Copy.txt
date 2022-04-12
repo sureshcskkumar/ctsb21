@@ -1,0 +1,53 @@
+Features of Spring Boot and benefits 
+	framework
+	open source
+	java ee
+	standalone
+	easily - with less configuration, auto configuration
+	production ready/grage
+	just run
+	
+Setting up a Spring Boot Workspace 
+Working with Spring Boot Starters 
+Spring Boot Dependency Management 
+Spring Data  
+Spring Data Schema 
+Spring Data Services 
+Standard Project Structure for Spring Boot Projects 
+Using @Service Annotation Class for Business Layer 
+Dependency Injection 
+
+
+Introduction to RESTful Web Services (JAX-RS) 
+Retrieving LIST in REST 
+Writing a RESTful Web Services with JSON
+Architecture 
+Principles of REST 
+Using HTTP GET, PUT, POST, DELETE 
+Using Custom Response 
+Modifying Response Formats 
+
+HTTP Caching 
+
+Overriding auto-configured beans 
+Reducing code with custom auto configurations
+- @EnableAutoConfiguration 
+- writing own custom auto configuration
+
+
+Customizing Error Pages 
+Errors and Exception Handling 
+
+Spring Test 
+Implementation: Microservices Concept 
+Writing a REST Client
+Spring Security to configure Basic Authentication and JWT 
+
+
+Working with swagger and Postman Utility 
+12 Factor Principles 
+
+Handle Circular dependencies 
+Environment based setting
+
+Kafka
