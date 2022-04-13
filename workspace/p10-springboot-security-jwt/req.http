@@ -1,0 +1,35 @@
+GET http://localhost:8080/user?name=mark
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwicm9sZSI6ImFkbWluIiwiYWRkcmVzcyI6ImphcGFuIiwiZXhwIjoxNjQ5ODMwNjg4LCJpYXQiOjE2NDk4MzAzODh9.6n3yqVvKcdUshqe_WHcomcA94TZe7hp_N8oneKS9IJKVEYSwnrU-F4k9mGgLHERSp3ENTcjKK7npSIUmn__y1g
+
+###
+GET http://localhost:8080/user/mark
+
+###
+
+GET http://localhost:8080/user/home
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwicm9sZSI6ImFkbWluIiwiYWRkcmVzcyI6ImphcGFuIiwiZXhwIjoxNjQ5ODMwNjg4LCJpYXQiOjE2NDk4MzAzODh9.6n3yqVvKcdUshqe_WHcomcA94TZe7hp_N8oneKS9IJKVEYSwnrU-F4k9mGgLHERSp3ENTcjKK7npSIUmn__y1g
+
+###
+
+GET http://localhost:8080/home
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJhZG1pbiIsImFkZHJlc3MiOiJqYXBhbiIsImV4cCI6MTY0OTgzMDUzMSwiaWF0IjoxNjQ5ODMwMjMxfQ.G9BUkr-gJOpqSffcc98mlyxlgjDDkgrQjTHU5GJJBdiXw5_-1G2k_h4FHB9nTlTB9xw64z1yeCYVf542sBwkZA
+
+
+###
+
+POST http://localhost:8080/authenticate
+content-type: application/json
+
+{
+    "username": "user",
+    "password": "hello@world"
+}
+###
+
+POST http://localhost:8080/authenticate
+content-type: application/json
+
+{
+    "username": "admin",
+    "password": "hello@world"
+}
