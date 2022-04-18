@@ -1,0 +1,43 @@
+GET http://localhost:8989/hollywood/movies
+
+###
+
+POST http://localhost:8989/hollywood/movies
+content-type: application/json
+
+{
+    "title": "Superman is swimming",
+    "director": "Batman", 
+    "rating": 4.9
+}
+
+
+###
+
+POST http://localhost:8989/hollywood/movies
+content-type: application/json
+
+{
+    "title": "Batman is flying",
+    "director": "Mark", 
+    "rating": 4.7
+}
+
+###
+
+POST http://localhost:8989/hollywood/movies
+content-type: application/json
+
+{
+    "title": "Spriderman is a pilot",
+    "director": "Carl", 
+    "rating": 3.9
+}
+
+
+###
+
+GET http://localhost:8989/shows
+###
+
+GET http://localhost:8989/shows/hollywood-movies
