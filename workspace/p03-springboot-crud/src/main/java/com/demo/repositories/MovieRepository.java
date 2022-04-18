@@ -13,8 +13,9 @@ public interface MovieRepository extends JpaRepository<Movie, Integer>{
 	public List<Movie> findByTitle(String title);
 	
 	// not -> sql, hql
-	@Query(value="select obj from Movie obj where obj.title=?1 and obj.id=?2", nativeQuery = false)
-	public Movie findData(String str, int n);
+	@Query(value="select obj from Movie obj where obj.title=?1", nativeQuery = false)
+	// @Query(value="select * from movie title=?1", nativeQuery = true)
+	public List<Movie> findData(String str);
 }
 
 

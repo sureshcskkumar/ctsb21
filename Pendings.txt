@@ -1,21 +1,25 @@
+Working with swagger 
+12 Factor Principles 
+
+Handle Circular dependencies 
+
 Spring Test 
-
-Implementation: Microservices Concept 
-Writing a REST Client
-
-Spring Security to configure Basic Authentication and JWT 
-
 
 Overriding auto-configured beans 
 Reducing code with custom auto configurations
 - @EnableAutoConfiguration 
 - writing own custom auto configuration
 
-Handle Circular dependencies 
+
+Implementation: Microservices Concept 
+Writing a REST Client
 
 
-Working with swagger 
-12 Factor Principles 
+
+
+
+
+
 
 
 Kafka
