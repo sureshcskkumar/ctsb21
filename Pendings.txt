@@ -1,25 +1,10 @@
-Working with swagger 
 12 Factor Principles 
-
 Handle Circular dependencies 
-
-Spring Test 
 
 Overriding auto-configured beans 
 Reducing code with custom auto configurations
 - @EnableAutoConfiguration 
 - writing own custom auto configuration
 
+Spring Test 
 
-Implementation: Microservices Concept 
-Writing a REST Client
-
-
-
-
-
-
-
-
-
-Kafka
