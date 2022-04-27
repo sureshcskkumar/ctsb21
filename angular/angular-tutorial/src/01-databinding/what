@@ -1,0 +1,10 @@
+data in html <----> class
+in template
+    1. string interpolation
+        {{variable}}
+    2. event binding
+        (event)=method()
+    3. property binding
+        <input [value]="variable" /> 
+    4. two-way binding 
+        input [(ngModel)]="variable"

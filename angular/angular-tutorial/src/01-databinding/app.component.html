@@ -1,0 +1,12 @@
+<h1>Databinding</h1>
+Name: <mark>{{name}}</mark>
+<br/>
+<input type="text" [value]="name" #inputElement (keyup)="updateName(inputElement.value)" />
+
+<br/>
+<button (click)="doTask()">Read name</button>
+
+
+<hr/>
+
+<input [(ngModel)]="name" />

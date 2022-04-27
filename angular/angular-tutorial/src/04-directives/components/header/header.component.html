@@ -1,0 +1,8 @@
+<header>
+    <h6>My app name</h6>
+    <app-button *ngIf="!isValid" [color]="'green'">Login</app-button>
+    <app-button *ngIf="isValid" [color]="'red'">Logout</app-button>
+    <app-button [color]="'blue'">Payment</app-button>
+
+    <button (click)="doToggle()">Toggle</button>
+</header>
