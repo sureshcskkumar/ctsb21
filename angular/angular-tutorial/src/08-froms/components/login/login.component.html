@@ -1,0 +1,25 @@
+<h4>Login Form</h4>
+
+isErrors: {{!!loginForm.controls["uname"].errors}}<br/>
+<!-- <hr/>
+Errors: {{loginForm.controls["uname"].errors|json}}<br/>
+Status: {{loginForm.controls["uname"].status}}<br/>
+Value: {{loginForm.controls["uname"].value}}<br/>
+Valid: {{loginForm.controls["uname"].valid}}<br/>
+Invalid: {{loginForm.controls["uname"].invalid}}<br/>
+Dirty: {{loginForm.controls["uname"].dirty}}<br/>
+Pristine: {{loginForm.controls["uname"].pristine}}<br/>
+<hr/> -->
+
+<form [formGroup]="loginForm" (submit)="getLogin()">
+    Username: <input formControlName="uname" type="text"/><br/>
+    <span class="error" *ngIf='!!loginForm.controls["uname"].errors && loginForm.controls["uname"].dirty===true'>
+        <span *ngIf="!!loginForm.controls['uname'].errors['required']">Username is empty</span>
+        <span *ngIf="!!loginForm.controls['uname'].errors['minlength']">Min 5 chars are required</span>        
+        <br/>
+    </span>
+    Password: <input formControlName="pwd" type="text"/><br/>
+    
+    <input [disabled]="loginForm.invalid" type="submit" value="Login"/><br/>
+    <!-- <button type="submit">Login</button> -->
+</form>
