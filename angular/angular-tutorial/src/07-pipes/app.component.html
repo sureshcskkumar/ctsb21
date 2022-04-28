@@ -1,0 +1,33 @@
+<h1>App component</h1>
+
+<hr/>
+Username: {{users[0].username}} <br/>
+Username -> Uppercase: {{users[0].username | uppercase}} <br/>
+Username -> Lowercase: {{users[0].username | lowercase}} <br/>
+DOB: {{users[0].dob}} <br/>
+DOB -> date: {{users[0].dob|date}} <br/>
+DOB -> date: {{users[0].dob|date:"dd-MM-yyyy@hh:mm:ss"}} <br/>
+<hr/>
+
+<p *ngIf="users.length==0">Database is empty</p>
+
+<table *ngIf="users.length>0">
+    <tr>
+        <th>Id</th>
+        <th>DOB</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Street</th>
+        <th>City</th>
+        <th>zipcode</th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.dob}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.address.street}}</td>
+        <td>{{user.address.city}}</td>
+        <td>{{user.address.zipcode}}</td>
+    </tr>
+</table>

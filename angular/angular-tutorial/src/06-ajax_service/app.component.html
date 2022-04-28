@@ -1,0 +1,26 @@
+<h1>App component</h1>
+<button (click)="createNewUser()">Add User</button>
+<p *ngIf="users.length==0">Database is empty</p>
+
+<table *ngIf="users.length>0">
+    <tr>
+        <th>Id</th>
+        <th>DOB</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Street</th>
+        <th>City</th>
+        <th>zipcode</th>
+        <th>Delete</th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.dob|date:"short"}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.address.street}}</td>
+        <td>{{user.address.city}}</td>
+        <td>{{user.address.zipcode}}</td>
+        <td><button (click)="removeUser(user.id)">Delete</button></td>
+    </tr>
+</table>
