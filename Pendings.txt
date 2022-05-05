@@ -1,0 +1,24 @@
+Routing
+Nest Module
+Use Lazy Loading 
+
+-----------------
+Progress -> microservices
+-----------------
+
+Using Sass     
+
+
+Popular angular libraries like Angular Material, Bootstrap, rxjs, ngrx/store
+
+Breakpoints 
+Examine variables 
+Logging 
+Browsers' Debugging Tools 
+Pause Code with Breakpoints 
+Debug Background Service
+
+State Management   
+
+Exception Handling and Logging
+

@@ -1,0 +1,29 @@
+GET http://3.88.179.162:8080/api/v1/movies
+
+###
+
+POST http://3.88.179.162:8080/api/v1/movies
+content-type: application/json
+
+{
+    "title": "Superman",
+    "director": "Dr. Strange",
+    "rating": 3.7
+}
+
+
+###
+
+GET https://tfjd81biu0.execute-api.us-east-1.amazonaws.com/shows
+
+
+###
+
+POST https://tfjd81biu0.execute-api.us-east-1.amazonaws.com/shows
+content-type: application/json
+
+{
+    "title": "Batman",
+    "director": "Black Panther",
+    "rating": 4.7
+}
